@@ -11,6 +11,7 @@ JP_Theme is a Japaneseized CTFd theme
 ## インストール方法 Installation
 
 themes 内を消し置き換えてください
+
 Copy admin/ core/ into your CTFd/CTFd/themes folder.
 
 ```shell
