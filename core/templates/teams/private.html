@@ -1,3 +1,4 @@
+<!-- JP -->
 {% extends "base.html" %}
 
 {% block stylesheets %}
@@ -8,7 +9,7 @@
 		<div class="modal-dialog modal-lg">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h2 class="modal-action text-center w-100">Edit Team</h2>
+					<h2 class="modal-action text-center w-100">チームの編集</h2>
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 						<span aria-hidden="true">&times;</span>
 					</button>
@@ -79,7 +80,7 @@
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h2 class="modal-action text-center w-100">Choose Captain</h2>
+					<h2 class="modal-action text-center w-100">リーダーの選択</h2>
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 						<span aria-hidden="true">&times;</span>
 					</button>
@@ -109,7 +110,7 @@
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h2 class="modal-action text-center w-100">Invite Users</h2>
+					<h2 class="modal-action text-center w-100">ユーザーを招待する</h2>
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 						<span aria-hidden="true">&times;</span>
 					</button>
@@ -128,10 +129,10 @@
 								</div>
 							</div>
 							<small class="form-text text-muted">
-								Share this link with your team members for them to join your team
+								このリンクをチームメンバーと共有し、チームへの参加を呼びかけます。
 							</small>
 							<small class="form-text text-muted">
-								Invite links can be re-used and expire after 1 day
+								招待リンクは再利用可能で、1日後に失効します。
 							</small>
 						</div>
 					</form>
@@ -246,12 +247,12 @@
 
 		<div class="row min-vh-25">
 			<div class="col-md-12">
-				<h3>Members</h3>
+				<h3>メンバー</h3>
 				<table class="table table-striped">
 					<thead>
 					<tr>
-						<td><b>User Name</b></td>
-						<td><b>Score</b></td>
+						<td><b>ユーザー名</b></td>
+						<td><b>スコア</b></td>
 					</tr>
 					</thead>
 					<tbody>
@@ -262,7 +263,7 @@
 									{{ member.name }}
 								</a>
 								{% if team.captain_id == member.id %}
-									<span class="badge badge-primary ml-2">Captain</span>
+									<span class="badge badge-primary ml-2">リーダー</span>
 								{% endif %}
 							</td>
 							<td>{{ member.score }}</td>
@@ -325,14 +326,14 @@
 
 			<div class="row">
 				<div class="col-md-12">
-					<h3>Solves</h3>
+					<h3>解決方法</h3>
 					<table class="table table-striped">
 						<thead>
 						<tr>
-							<td><b>Challenge</b></td>
-							<td class="d-none d-md-block d-lg-block"><b>Category</b></td>
-							<td><b>Value</b></td>
-							<td><b>Time</b></td>
+							<td><b>問題名</b></td>
+							<td class="d-none d-md-block d-lg-block"><b>カテゴリ</b></td>
+							<td><b>スコアの値</b></td>
+							<td><b>時間</b></td>
 						</tr>
 						</thead>
 						<tbody>
@@ -357,7 +358,7 @@
 		{% else %}
 			<div class="row min-vh-25">
 				<h3 class="opacity-50 text-center w-100 justify-content-center align-self-center">
-					No solves yet
+					まだ解答はありません
 				</h3>
 			</div>
 		{% endif %}
