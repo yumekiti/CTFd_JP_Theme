@@ -4,6 +4,7 @@ JP_Theme は CTFd を日本語化したテーマです
 JP_Theme is a Japaneseized CTFd theme
 
 ## スクリーンショット Screenshots
+![index](./images/index.png)
 
 ## インストール方法 Installation
 themes 内を消し置き換えてください
