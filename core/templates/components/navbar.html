@@ -1,3 +1,4 @@
+<!-- JP -->
 <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
     <div class="container">
         <a href="{{ url_for('views.static_html', route='/') }}" class="navbar-brand">
@@ -21,23 +22,23 @@
 
                 {% if Configs.account_visibility != 'admins' %}
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ url_for('users.listing') }}">Users</a>
+                        <a class="nav-link" href="{{ url_for('users.listing') }}">ユーザー</a>
                     </li>
                     {% if Configs.user_mode == 'teams' %}
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ url_for('teams.listing') }}">Teams</a>
+                        <a class="nav-link" href="{{ url_for('teams.listing') }}">参加チーム</a>
                     </li>
                     {% endif %}
                 {% endif %}
 
                 {% if Configs.score_visibility != 'admins' %}
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ url_for('scoreboard.listing') }}">Scoreboard</a>
+                        <a class="nav-link" href="{{ url_for('scoreboard.listing') }}">スコアボード</a>
                     </li>
                 {% endif %}
 
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ url_for('challenges.listing') }}">Challenges</a>
+                    <a class="nav-link" href="{{ url_for('challenges.listing') }}">問題</a>
                 </li>
             </ul>
 
@@ -52,7 +53,7 @@
                                     <i class="fas fa-wrench d-none d-md-block d-lg-none"></i>
                                 </span>
                                 <span class="d-sm-block d-md-none d-lg-block">
-                                    <i class="fas fa-wrench pr-1"></i>Admin Panel
+                                    <i class="fas fa-wrench pr-1"></i>管理
                                 </span>
                             </a>
                         </li>
@@ -65,7 +66,7 @@
                             <span class="d-sm-block d-md-none d-lg-block">
                                 <i class="fas fa-bell pr-1"></i>
                                 <span class="badge badge-pill badge-danger badge-notification"></span>
-                                Notifications
+                                通知
                             </span>
                         </a>
                     </li>
@@ -76,7 +77,7 @@
                                 <i class="fas fa-users d-none d-md-block d-lg-none"></i>
                             </span>
                             <span class="d-sm-block d-md-none d-lg-block">
-                                <i class="fas fa-users pr-1"></i>Team
+                                <i class="fas fa-users pr-1"></i>チーム
                             </span>
                         </a>
                     </li>
@@ -87,7 +88,7 @@
                                 <i class="fas fa-user-circle d-none d-md-block d-lg-none"></i>
                             </span>
                             <span class="d-sm-block d-md-none d-lg-block">
-                                <i class="fas fa-user-circle pr-1"></i>Profile
+                                <i class="fas fa-user-circle pr-1"></i>プロフィール
                             </span>
                         </a>
                     </li>
@@ -97,7 +98,7 @@
                                 <i class="fas fa-cogs d-none d-md-block d-lg-none"></i>
                             </span>
                             <span class="d-sm-block d-md-none d-lg-block">
-                                <i class="fas fa-cogs pr-1"></i>Settings
+                                <i class="fas fa-cogs pr-1"></i>設定
                             </span>
                         </a>
                     </li>
@@ -107,7 +108,7 @@
                                 <i class="fas fa-sign-out-alt d-none d-md-block d-lg-none"></i>
                             </span>
                             <span class="d-sm-block d-md-none d-lg-block">
-                                <i class="fas fa-sign-out-alt pr-1"></i><span class="d-lg-none">Logout</span>
+                                <i class="fas fa-sign-out-alt pr-1"></i><span class="d-lg-none">ログアウト</span>
                             </span>
                         </a>
                     </li>
@@ -119,7 +120,7 @@
                                     <i class="fas fa-user-plus d-none d-md-block d-lg-none"></i>
                                 </span>
                                 <span class="d-sm-block d-md-none d-lg-block">
-                                    <i class="fas fa-user-plus pr-1"></i>Register
+                                    <i class="fas fa-user-plus pr-1"></i>登録
                                 </span>
                             </a>
                         </li>
@@ -130,7 +131,7 @@
                                 <i class="fas fa-sign-in-alt d-none d-md-block d-lg-none"></i>
                             </span>
                             <span class="d-sm-block d-md-none d-lg-block">
-                                <i class="fas fa-sign-in-alt pr-1"></i>Login
+                                <i class="fas fa-sign-in-alt pr-1"></i>ログイン
                             </span>
                         </a>
                     </li>
