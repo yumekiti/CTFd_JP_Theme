@@ -8,8 +8,14 @@ JP_Theme is a Japaneseized CTFd theme
 
 ## インストール方法 Installation
 themes 内を消し置き換えてください
-```
+```shell
 rm -r CTFd/themes/*
 
-git clone https://github.com/yumekiti/CTFd_JP_Theme.git CTFd/themes
+git clone https://github.com/yumekiti/CTFd_JP_Theme.git
+cd CTFd_JP_Theme
+
+cp admin core ../CTFd/themes/
 ```
+
+- Copy admin/ into your CTFd/CTFd/themes folder.
+- Copy core/ into your CTFd/CTFd/themes folder.
