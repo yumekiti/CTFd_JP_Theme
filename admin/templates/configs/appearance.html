@@ -1,9 +1,10 @@
+<!-- JP -->
 <div role="tabpanel" class="tab-pane config-section active" id="appearance">
 	<form method="POST" autocomplete="off" class="w-100">
 		<div class="form-group">
 			<label for="ctf_name">
-				Competition Name
-				<small class="form-text text-muted">Competition name displayed instead of a logo</small>
+				大会名
+				<small class="form-text text-muted">ロゴの代わりに表示される大会名</small>
 			</label>
 			<input class="form-control" id='ctf_name' name='ctf_name' type='text' placeholder="CTF Name"
 				   {% if ctf_name is defined and ctf_name != None %}value="{{ ctf_name }}"{% endif %}>
@@ -11,14 +12,14 @@
 
 		<div class="form-group">
 			<label>
-				CTF Description<br>
+				CTFの概要<br>
 				<small class="form-text text-muted">
-					Description for the CTF
+					CTFに関する説明
 				</small>
 			</label>
 			<textarea class="form-control" type="text" id="ctf_description" name="ctf_description" rows="5">{{ ctf_description }}</textarea>
 		</div>
 
-		<button type="submit" class="btn btn-md btn-primary float-right">Update</button>
+		<button type="submit" class="btn btn-md btn-primary float-right">更新</button>
 	</form>
 </div>

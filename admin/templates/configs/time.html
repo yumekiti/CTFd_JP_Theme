@@ -1,19 +1,20 @@
+<!-- JP -->
 <div role="tabpanel" class="tab-pane config-section" id="ctftime">
 	<form method="POST" autocomplete="off" class="w-100">
 		<ul class="nav nav-tabs mb-3">
 			<li class="nav-item">
 				<a class="nav-link active" href="#start-date" aria-controls="start-date" role="tab" data-toggle="tab">
-					Start Time
+					開始時間
 				</a>
 			</li>
 			<li class="nav-item">
 				<a class="nav-link" href="#end-date" aria-controls="end-date" role="tab" data-toggle="tab">
-					End Time
+					終了時間
 				</a>
 			</li>
 			<li class="nav-item">
 				<a class="nav-link" href="#freeze-date" aria-controls="freeze-date" role="tab" data-toggle="tab">
-					Freeze Time
+					休憩時間
 				</a>
 			</li>
 		</ul>
@@ -22,8 +23,7 @@
 			<div role="tabpanel" class="tab-pane active" id="start-date">
 				<div class="row" id="start-date">
 					<div class="col-md-12">
-						<p>This is the time when the competition will begin. Challenges will automatically
-							unlock and users will be able to submit answers.</p>
+						<p>この時間から競技が始まります。チャレンジは自動的にアンロックされ 解答を提出することができます。</p>
 						<sub class="text-muted text-right mb-3">* All time fields required</sub>
 					</div>
 
@@ -85,8 +85,7 @@
 			<div role="tabpanel" class="tab-pane" id="end-date">
 				<div class="row" id="end-date">
 					<div class="col-md-12">
-						<p>This is the time when the competition will end. Challenges will automatically
-							close and users won't be able to submit answers.</p>
+						<p>コンペティションが終了する時間です。チャレンジは自動的に終了し 終了し、ユーザーは回答を提出することができなくなります。</p>
 						<sub class="text-muted text-right mb-3">* All time fields required</sub>
 					</div>
 
@@ -123,7 +122,7 @@
 						<label>
 							<input id="view_after_ctf" name="view_after_ctf" type="checkbox"
 								   {% if view_after_ctf %}checked{% endif %}>
-							Allow challenges to be viewed (no submissions are recorded) after the CTF End Time.
+							CTF終了時刻以降も課題の閲覧を許可する（投稿は記録されない）。
 						</label>
 					</div>
 
@@ -156,9 +155,9 @@
 			<div role="tabpanel" class="tab-pane" id="freeze-date">
 				<div class="row" id="freeze-date">
 					<div class="col-md-12">
-						<p>Freeze time specifies the timestamp that the competition will be frozen to.
-							All solves before the freeze time will be shown, but new solves won't be shown to
-							users. </p>
+						<p>凍結時間は、競技が凍結されるタイムスタンプを指定します。
+							凍結時間以前の解答はすべて表示されますが、新しい解答はユーザーに表示されません。
+							ユーザーには表示されません。 </p>
 						<sub class="text-muted text-right mb-3">* All time fields required</sub>
 					</div>
 
@@ -219,6 +218,6 @@
 			</div>
 		</div>
 
-		<button type="submit" class="btn btn-md btn-primary float-right">Update</button>
+		<button type="submit" class="btn btn-md btn-primary float-right">更新</button>
 	</form>
 </div>
