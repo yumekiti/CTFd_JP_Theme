@@ -1,3 +1,4 @@
+<!-- JP -->
 {% extends "admin/base.html" %}
 
 {% block stylesheets %}
@@ -16,21 +17,21 @@
 				<form method="POST" id="reset-ctf-form">
 					<div class="alert alert-danger" role="alert">
 						<p>
-							Resetting your CTFd instance allows you to bulk delete data to prepare it for other events,
-							other classes, or to otherwise get it to a clean state.
+							CTFdインスタンスをリセットすることで、データを一括削除し、他のイベントへの準備をすることができます。 
+							他のクラスのために準備するため、または、クリーンな状態にするために、データを一括削除することができます。
 						</p>
 
 						<p>
-							Resetting your CTFd instance will delete the selected data <strong>PERMANENTLY</strong>.
+							CTFdインスタンスのリセットは、選択したデータを<strong></strong>永久</strong>に削除します。
 						</p>
 
 						<p>
-							Think carefully before resetting because no automated backups are made and all selected data will be lost.
+							自動バックアップが行われず、選択したデータがすべて失われるため、リセットする前によく考えてください。
 						</p>
 
 						<span>
 							<strong>
-								Create backups of all data you need by <a href="{{ url_for('admin.config', _anchor='backup') }}">creating a CTFd Export</a>
+								<a href="{{ url_for('admin.config', _anchor='backup') }}">CTFd Export</a>を作成し、必要なデータのバックアップを作成します。
 							</strong>
 						</span>
 					</div>
@@ -43,7 +44,7 @@
 							{{ form.accounts.label(class="form-check-label") }}
 						</div>
 						<span class="text-muted">
-							Deletes all user and team accounts and their associated information<br>
+							すべてのユーザーおよびチームアカウントとその関連情報を削除します。<br>
 							<small>(Users, Teams, Submissions, Tracking)</small>
 						</span>
 					</div>
@@ -54,7 +55,7 @@
 							{{ form.submissions.label(class="form-check-label") }}
 						</div>
 						<span class="text-muted">
-							Deletes all records that accounts gained points or took an action<br>
+							アカウントがポイントを獲得した、またはアクションを起こしたレコードをすべて削除する<br>
 							<small>(Submissions, Awards, Unlocks, Tracking)</small>
 						</span>
 					</div>
@@ -65,7 +66,7 @@
 							{{ form.challenges.label(class="form-check-label") }}
 						</div>
 						<span class="text-muted">
-							Deletes all challenges and associated data<br>
+							すべてのチャレンジと関連するデータを削除します。<br>
 							<small>(Challenges, Flags, Hints, Tags, Challenge Files)</small>
 						</span>
 					</div>
@@ -76,7 +77,7 @@
 							{{ form.pages.label(class="form-check-label") }}
 						</div>
 						<span class="text-muted">
-							Deletes all pages and their associated files<br>
+							すべてのページとその関連ファイルを削除する<br>
 							<small>(Pages, Page Files)</small>
 						</span>
 					</div>
@@ -87,7 +88,7 @@
 							{{ form.notifications.label(class="form-check-label") }}
 						</div>
 						<span class="text-muted">
-							Deletes all notifications<br>
+							すべての通知を削除する<br>
 							<small>(Notifications)</small>
 						</span>
 					</div>
