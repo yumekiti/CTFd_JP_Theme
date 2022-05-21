@@ -1,4 +1,5 @@
- {% extends "base.html" %}
+<!-- JP -->
+{% extends "base.html" %}
 
 {% block stylesheets %}
 {% endblock %}
@@ -6,15 +7,15 @@
 {% block content %}
 <div class="jumbotron">
 	<div class="container">
-		<h1>Settings</h1>
+		<h1>設定</h1>
 	</div>
 </div>
 <div class="container">
 	<div class="row">
 		<div class="col-md-2 offset-md-1">
 			<div class="nav flex-column nav-pills" role="tablist">
-				<a class="nav-link active" id="settings-profile-tab" data-toggle="pill" href="#profile" role="tab">Profile</a>
-				<a class="nav-link" id="settings-tokens-tab" data-toggle="pill" href="#tokens" role="tab">Access Tokens</a>
+				<a class="nav-link active" id="settings-profile-tab" data-toggle="pill" href="#profile" role="tab">プロフィール</a>
+				<a class="nav-link" id="settings-tokens-tab" data-toggle="pill" href="#tokens" role="tab">アクセストークン</a>
 			</div>
 		</div>
 		<div class="col-md-8">
@@ -90,13 +91,13 @@
 
 					{% if tokens %}
 					<hr>
-					<h4 class="text-center">Active Tokens</h4>
+					<h4 class="text-center">アクティブトークン</h4>
 					<table class="table table-striped">
 						<thead>
 							<tr>
-								<td class="text-center"><b>Created</b></td>
-								<td class="text-center"><b>Expiration</b></td>
-								<td class="text-center"><b>Delete</b></td>
+								<td class="text-center"><b>作成</b></td>
+								<td class="text-center"><b>有効期限</b></td>
+								<td class="text-center"><b>削除</b></td>
 							</tr>
 						</thead>
 						<tbody>

@@ -1,3 +1,4 @@
+<!-- JP -->
 <div class="modal-dialog" role="document">
 	<div class="modal-content">
 		<div class="modal-body">
@@ -6,7 +7,7 @@
 			</button>
 			<ul class="nav nav-tabs">
 				<li class="nav-item">
-					<a class="nav-link active" href="#challenge">Challenge</a>
+					<a class="nav-link active" href="#challenge">問題</a>
 				</li>
 				{% block solves %}
 					<li class="nav-item">
@@ -56,16 +57,16 @@
 									<a class="btn btn-info btn-hint btn-block load-hint" href="javascript:;" data-hint-id="{{ hint.id }}">
 										{% if hint.content %}
 											<small>
-												View Hint
+												ヒントを見る
 											</small>
 										{% else %}
 											{% if hint.cost %}
 												<small>
-													Unlock Hint for {{ hint.cost }} points
+													ヒントを解除するには {{ hint.cost }} ポイントが必要です。
 												</small>
 											{% else %}
 												<small>
-													View Hint
+													ヒントを見る
 												</small>
 											{% endif %}
 										{% endif %}
@@ -115,7 +116,7 @@
 							<div class="col-md-3 form-group key-submit">
 								{% block submit %}
 								<button id="challenge-submit" class="challenge-submit" type="submit">
-									Submit
+									提出
 								</button>
 								{% endblock %}
 							</div>
@@ -137,9 +138,9 @@
 								<table class="table table-striped text-center">
 									<thead>
 									<tr>
-										<td><b>Name</b>
+										<td><b>ユーザー名</b>
 										</td>
-										<td><b>Date</b>
+										<td><b>時間</b>
 										</td>
 									</tr>
 									</thead>
