@@ -1,3 +1,4 @@
+<!-- JP -->
 {% extends "admin/base.html" %}
 
 {% block stylesheets %}
@@ -12,7 +13,7 @@
 		<div class="modal-dialog modal-lg">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h2 class="modal-action text-center w-100">Comments</h2>
+					<h2 class="modal-action text-center w-100">コメント</h2>
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 						<span aria-hidden="true">&times;</span>
 					</button>
@@ -66,20 +67,20 @@
 		<div class="row">
 			<div class="col-md-6">
 				<nav class="nav nav-tabs nav-fill" id="challenge-properties" role="tablist">
-					<a class="nav-item nav-link small active" data-toggle="tab" href="#files" role="tab">Files</a>
-					<a class="nav-item nav-link small" data-toggle="tab" href="#flags" role="tab">Flags</a>
-					<a class="nav-item nav-link small" data-toggle="tab" href="#topics" role="tab">Topics</a>
-					<a class="nav-item nav-link small" data-toggle="tab" href="#tags" role="tab">Tags</a>
-					<a class="nav-item nav-link small" data-toggle="tab" href="#hints" role="tab">Hints</a>
-					<a class="nav-item nav-link small" data-toggle="tab" href="#requirements" role="tab">Requirements</a>
-					<a class="nav-item nav-link small" data-toggle="tab" href="#next" role="tab">Next</a>
+					<a class="nav-item nav-link small active" data-toggle="tab" href="#files" role="tab">ファイル</a>
+					<a class="nav-item nav-link small" data-toggle="tab" href="#flags" role="tab">フラグ</a>
+					<a class="nav-item nav-link small" data-toggle="tab" href="#topics" role="tab">トピックス</a>
+					<a class="nav-item nav-link small" data-toggle="tab" href="#tags" role="tab">タグ</a>
+					<a class="nav-item nav-link small" data-toggle="tab" href="#hints" role="tab">ヒント</a>
+					<a class="nav-item nav-link small" data-toggle="tab" href="#requirements" role="tab">必要条件</a>
+					<a class="nav-item nav-link small" data-toggle="tab" href="#next" role="tab">次</a>
 				</nav>
 
 				<div class="tab-content" id="nav-tabContent">
 					<div class="tab-pane fade show active" id="files" role="tabpanel">
 						<div class="row">
 							<div class="col-md-12">
-								<h3 class="text-center py-3 d-block">Files</h3>
+								<h3 class="text-center py-3 d-block">ファイル</h3>
 								{% include "admin/modals/challenges/files.html" %}
 							</div>
 						</div>
@@ -87,7 +88,7 @@
 					<div class="tab-pane fade" id="flags" role="tabpanel">
 						<div class="row">
 							<div class="col-md-12">
-								<h3 class="text-center py-3 d-block">Flags</h3>
+								<h3 class="text-center py-3 d-block">フラグ</h3>
 								{% include "admin/modals/challenges/flags.html" %}
 							</div>
 						</div>
@@ -95,7 +96,7 @@
 					<div class="tab-pane fade" id="topics" role="tabpanel">
 						<div class="row">
 							<div class="col-md-12">
-								<h3 class="text-center py-3 d-block">Topics</h3>
+								<h3 class="text-center py-3 d-block">トピックス</h3>
 								{% include "admin/modals/challenges/topics.html" %}
 							</div>
 						</div>
@@ -103,7 +104,7 @@
 					<div class="tab-pane fade" id="tags" role="tabpanel">
 						<div class="row">
 							<div class="col-md-12">
-								<h3 class="text-center py-3 d-block">Tags</h3>
+								<h3 class="text-center py-3 d-block">タグ</h3>
 								{% include "admin/modals/challenges/tags.html" %}
 							</div>
 						</div>
@@ -111,7 +112,7 @@
 					<div class="tab-pane fade" id="hints" role="tabpanel">
 						<div class="row">
 							<div class="col-md-12">
-								<h3 class="text-center py-3 d-block">Hints</h3>
+								<h3 class="text-center py-3 d-block">ヒント</h3>
 								{% include "admin/modals/challenges/hints.html" %}
 							</div>
 						</div>
@@ -119,7 +120,7 @@
 					<div class="tab-pane fade" id="requirements" role="tabpanel">
 						<div class="row">
 							<div class="col-md-12">
-								<h3 class="text-center py-3 d-block">Requirements</h3>
+								<h3 class="text-center py-3 d-block">必要条件</h3>
 								{% include "admin/modals/challenges/requirements.html" %}
 							</div>
 						</div>
@@ -127,7 +128,7 @@
 					<div class="tab-pane fade" id="next" role="tabpanel">
 						<div class="row">
 							<div class="col-md-12">
-								<h3 class="text-center py-3 d-block">Next Challenge</h3>
+								<h3 class="text-center py-3 d-block">次の問題</h3>
 								{% include "admin/modals/challenges/next.html" %}
 							</div>
 						</div>

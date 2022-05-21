@@ -1,3 +1,4 @@
+<!-- JP -->
 {% extends "admin/base.html" %}
 
 {% block stylesheets %}
@@ -8,7 +9,7 @@
 {% block content %}
 <div class="jumbotron">
 	<div class="container">
-		<h1>Challenges
+		<h1>問題一覧
 			<a class="no-decoration" href="{{ url_for('admin.challenges_new') }}">
 				<span role="button" data-toggle="tooltip" title="Create Challenge">
 					<i class="btn-fa fas fa-plus-circle"></i>
@@ -76,11 +77,11 @@
 							</div>
 						</td>
 						<th class="sort-col text-center"><b>ID</b></th>
-						<th class="sort-col"><b>Name</b></th>
-						<th class="d-none d-md-table-cell d-lg-table-cell sort-col"><b>Category</b></th>
-						<th class="d-none d-md-table-cell d-lg-table-cell sort-col text-center"><b>Value</b></th>
-						<th class="d-none d-md-table-cell d-lg-table-cell sort-col text-center"><b>Type</b></th>
-						<th class="d-none d-md-table-cell d-lg-table-cell sort-col text-center"><b>State</b></th>
+						<th class="sort-col"><b>問題名</b></th>
+						<th class="d-none d-md-table-cell d-lg-table-cell sort-col"><b>カテゴリ</b></th>
+						<th class="d-none d-md-table-cell d-lg-table-cell sort-col text-center"><b>スコアの値</b></th>
+						<th class="d-none d-md-table-cell d-lg-table-cell sort-col text-center"><b>種類</b></th>
+						<th class="d-none d-md-table-cell d-lg-table-cell sort-col text-center"><b>状態</b></th>
 					</tr>
 					</thead>
 					<tbody>

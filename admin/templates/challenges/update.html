@@ -1,3 +1,4 @@
+<!-- JP -->
 {% block header %}
 {% endblock %}
 
@@ -5,8 +6,7 @@
 	{% block name %}
 	<div class="form-group">
 		<label>
-			Name<br>
-			<small class="form-text text-muted">Challenge Name</small>
+			問題名<br>
 		</label>
 		<input type="text" class="form-control chal-name" name="name" value="{{ challenge.name }}">
 	</div>
@@ -15,8 +15,7 @@
 	{% block category %}
 	<div class="form-group">
 		<label>
-			Category<br>
-			<small class="form-text text-muted">Challenge Category</small>
+			カテゴリ<br>
 		</label>
 		<input type="text" class="form-control chal-category" name="category" value="{{ challenge.category }}">
 	</div>
@@ -25,10 +24,7 @@
 	{% block message %}
 	<div class="form-group">
 		<label>
-			Message<br>
-			<small class="form-text text-muted">
-				Use this to give a brief introduction to your challenge.
-			</small>
+			問題文<br>
 		</label>
 		<textarea id="desc-editor" class="form-control chal-desc-editor markdown" name="description" rows="10">{{ challenge.description }}</textarea>
 	</div>
@@ -37,9 +33,9 @@
 	{% block connection_info %}
 	<div class="form-group">
 		<label>
-			Connection Info<br>
+			接続先情報<br>
 			<small class="form-text text-muted">
-				Use this to specify a link, hostname, or connection instructions for your challenge.
+				課題へのリンク、ホスト名、接続方法を指定する場合に使用します。
 			</small>
 		</label>
 		<input type="text" class="form-control chal-connection-info" name="connection_info" value="{{ challenge.connection_info | default('', true) }}">
@@ -49,9 +45,9 @@
 	{% block value %}
 	<div class="form-group">
 		<label for="value">
-			Value<br>
+			スコアの値<br>
 			<small class="form-text text-muted">
-				This is how many points teams will receive once they solve this challenge.
+				この課題を解くと、何点獲得できるかを表しています。
 			</small>
 		</label>
 		<input type="number" class="form-control chal-value" name="value" value="{{ challenge.value }}" required>
@@ -61,8 +57,8 @@
 	{% block max_attempts %}
 	<div class="form-group">
 		<label>
-			Max Attempts<br>
-			<small class="form-text text-muted">Maximum amount of attempts users receive. Leave at 0 for unlimited.</small>
+			最大試行回数<br>
+			<small class="form-text text-muted">ユーザーが受け取る試行回数の最大値。無制限の場合は0にします。</small>
 		</label>
 
 		<input type="number" class="form-control chal-attempts" name="max_attempts" value="{{ challenge.max_attempts }}">
@@ -72,13 +68,13 @@
 	{% block state %}
 	<div class="form-group">
 		<label>
-			State<br>
-			<small class="form-text text-muted">Changes the state of the challenge (e.g. visible, hidden)</small>
+			状態<br>
+			<small class="form-text text-muted">課題の状態を変更する（例：表示、非表示）</small>
 		</label>
 
 		<select class="form-control custom-select" name="state">
-			<option value="visible" {% if challenge.state == "visible" %}selected{% endif %}>Visible</option>
-			<option value="hidden" {% if challenge.state == "hidden" %}selected{% endif %}>Hidden</option>
+			<option value="visible" {% if challenge.state == "visible" %}selected{% endif %}>表示</option>
+			<option value="hidden" {% if challenge.state == "hidden" %}selected{% endif %}>非表示</option>
 		</select>
 	</div>
 	{% endblock %}
@@ -86,7 +82,7 @@
 	{% block submit %}
 	<div>
 		<button class="btn btn-success btn-outlined float-right" type="submit">
-			Update
+			更新
 		</button>
 	</div>
 	{% endblock %}

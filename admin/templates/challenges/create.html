@@ -1,3 +1,4 @@
+<!-- JP -->
 {% block header %}
 {% endblock %}
 
@@ -5,10 +6,7 @@
 	{% block name %}
 	<div class="form-group">
 		<label>
-			Name:<br>
-			<small class="form-text text-muted">
-				The name of your challenge
-			</small>
+			問題名:<br>
 		</label>
 		<input type="text" class="form-control" name="name" placeholder="Enter challenge name">
 	</div>
@@ -17,10 +15,7 @@
 	{% block category %}
 	<div class="form-group">
 		<label>
-			Category:<br>
-			<small class="form-text text-muted">
-				The category of your challenge
-			</small>
+			カテゴリ:<br>
 		</label>
 		<input type="text" class="form-control" name="category" placeholder="Enter challenge category">
 	</div>
@@ -30,9 +25,9 @@
 	{% block message %}
 	<div class="form-group">
 		<label>
-			Message:<br>
+			問題文:<br>
 			<small class="form-text text-muted">
-				Use this to give a brief introduction to your challenge.
+				課題の簡単な紹介にご利用ください。
 			</small>
 		</label>
 		<textarea id="new-desc-editor" class="form-control markdown" name="description" rows="10"></textarea>
@@ -42,9 +37,9 @@
 	{% block value %}
 	<div class="form-group">
 		<label>
-			Value:<br>
+			スコアの値:<br>
 			<small class="form-text text-muted">
-				This is how many points are rewarded for solving this challenge.
+				この課題を解くと、このようにポイントが加算されます。
 			</small>
 		</label>
 		<input type="number" class="form-control" name="value" placeholder="Enter value" required>
@@ -61,7 +56,7 @@
 
 	{% block submit %}
 	<div class="form-group">
-		<button class="btn btn-primary float-right create-challenge-submit" type="submit">Create</button>
+		<button class="btn btn-primary float-right create-challenge-submit" type="submit">作成</button>
 	</div>
 	{% endblock %}
 </form>
